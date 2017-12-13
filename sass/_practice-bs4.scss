@@ -4,3 +4,39 @@
     width: 100%;
   }
 }
+.scroll-one{
+  //position: relative;
+  .scroll{
+    padding-top:70px;
+    padding-bottom:70px
+  }
+}
+.utilities{
+  .rounded{
+    background-color: #555;
+    float: left;
+    padding: 0;
+    margin: 0 10px;
+    width: 130px;
+    transition: all .5s ease-in-out;
+    height: 130px;
+    text-align: center;
+    position: relative;
+    &:hover{
+      transform: scale(1.1);
+      transition: all .5s ease-in-out;
+      span{
+        font-size: 32px;
+        transition: 0.5s ease;
+      }
+    }
+    span{
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+    }
+  }
+}
